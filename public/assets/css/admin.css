@@ -1,0 +1,68 @@
+.form-wrapper {
+	display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+	.form-wrapper {
+		display: block;
+	}
+	.code-ticket {
+		margin-top: 50px;
+	}
+}
+
+#hero-wrapper {
+	margin-bottom: 50px;
+}
+
+.card-description {
+	padding: 20px;
+}
+
+.cta-button {
+	margin-top: 20px;
+	border: none;
+	background-color: rgb(86, 150, 218);
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	transition: background-color 0.5s;
+}
+
+.cta-button:hover {
+	background-color: rgb(48, 119, 196);
+}
+
+.seminar-schedule {
+	font-size: 1.5rem;
+}
+
+.detail-seminar {
+	display: grid;
+	grid-template-columns: 3fr 6fr;
+}
+.detail-peserta-seminar {
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+}
+
+.detail-ticket {
+	/* width: 100%; */
+	display: grid;
+	grid-template-columns: 2fr 7fr;
+}
+
+@media only screen and (min-width: 1281px) {
+	#hero-wrapper {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	.card-description {
+		padding: 50px;
+	}
+	.detail-wrapper {
+		display: grid;
+		grid-template-columns: 7fr 3fr;
+		align-items: center;
+	}
+}
