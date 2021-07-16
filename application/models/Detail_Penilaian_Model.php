@@ -5,7 +5,7 @@ class Detail_Penilaian_Model extends CI_Model {
     private $table = 'detail_penilaian';
 
     public function getAll($nim = '') {
-        $this->db->select('detail_penilaian.id, seminar_ta.nama_mahasiswa, seminar_ta.nim, seminar_ta.judul, dosen.nama, detail_penilaian.nilai');
+        $this->db->select('detail_penilaian.id, seminar_ta.nama_mahasiswa, seminar_ta.nim, seminar_ta.judul, dosen.nama, detail_penilaian.nilai, seminar_ta.nilai_pembimbing, seminar_ta.nilai_penguji1, seminar_ta.nilai_penguji2, seminar_ta.nilai_akhir');
         $this->db->join('penilaian', 'penilaian.id = detail_penilaian.penilaian_id');
         $this->db->join('dosen', 'dosen.id = detail_penilaian.dosen_id');
         $this->db->join('seminar_ta', 'seminar_ta.id = detail_penilaian.seminar_id');

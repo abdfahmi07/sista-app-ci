@@ -7,6 +7,7 @@
             <li class="breadcrumb-item active" aria-current="page">Detail Penilaian</li>
         </ol>
     </div>
+
     <div class="row">
         <div class="col-lg">
             <div class="card mb-4">

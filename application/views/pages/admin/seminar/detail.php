@@ -75,6 +75,7 @@
                         <h6>Nilai Pembimbing</h6>
                         <h6>Nilai Penguji 1</h6>
                         <h6>Nilai Penguji 2</h6>
+                        <h6 style="color: red;">Nilai Akhir</h6>
                     </div>
                     <div class="right-side">
                         <h6>:
@@ -85,6 +86,9 @@
                         </h6>
                         <h6>:
                             &nbsp;<?= $seminar_with_pembimbing->nilai_penguji2 != 0 ? $seminar_with_pembimbing->nilai_penguji2 : 'Belum Ada Nilai' ?>
+                        </h6>
+                        <h6 style="color: red;">:
+                            &nbsp;<?= $seminar_with_pembimbing->nilai_akhir != 0 ? $seminar_with_pembimbing->nilai_akhir : 'Belum Ada Nilai' ?>
                         </h6>
                     </div>
                 </div>

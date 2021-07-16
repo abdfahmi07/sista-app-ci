@@ -48,7 +48,8 @@
                             <?= form_error('dosen', '<small class="text-danger">' , '</small>') ?>
                         </div>
                         <div class="form-group">
-                            <label for="nilai">Nilai</label>
+                            <label for="nilai">Nilai<small><span style="color: red;"> * </span>inputkan nilai sesuai
+                                    dengan nilai akhir seminar</small></label>
                             <input type="number" class="form-control col-md-6" name="nilai" id="nilai"
                                 placeholder="Masukan Nilai" value="<?= $penilaian->nilai ?>">
                             <?= form_error('nilai', '<small class="text-danger">' , '</small>') ?>

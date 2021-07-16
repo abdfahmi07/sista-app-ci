@@ -55,7 +55,6 @@
                                 <?php 
                             $nomor = 1;
                             foreach($peserta->result() as $row) : ?>
-
                                 <tr>
                                     <td><?= $nomor ?></td>
                                     <td><?= $row->nim ?></td>

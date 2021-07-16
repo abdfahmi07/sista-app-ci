@@ -18,6 +18,9 @@
            Jadwal Seminar
        </h2>
        <div class="row mb-3">
+           <?php if($seminar->num_rows() < 1) : ?>
+           <h6 class="col-lg text-center">Maaf belum ada seminar untuk saat ini</h6>
+           <?php endif;?>
            <?php foreach($seminar->result() as $card) : ?>
            <div class="col-xl-4 col-md-6 mb-4">
                <div class="card card-seminar">

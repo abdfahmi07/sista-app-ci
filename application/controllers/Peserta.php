@@ -16,7 +16,7 @@ class Peserta extends CI_Controller {
         $this->form_validation->set_rules('name', 'Nama', 'required|trim');
         $this->form_validation->set_rules('prodi', 'Prodi', 'required|trim');
 
-
+        
         if($this->form_validation->run() == false) {
            redirect($_SERVER['HTTP_REFERER']);
         }  else {
