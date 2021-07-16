@@ -29,7 +29,7 @@ class Peserta extends CI_Controller {
             ];
             $this->peserta_model->insert($data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
-            New data has been added.</div>');
+            Congratulations! You have registered for the seminar.</div>');
             redirect('jadwal_seminar/data');
     }
     }

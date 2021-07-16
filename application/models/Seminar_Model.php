@@ -15,7 +15,7 @@ class Seminar_Model extends CI_Model {
         $this->db->order_by('tanggal DESC, jam DESC');
         // $this->db->order_by('tanggal', 'DESC');
 
-        // $this->db->join('dosen', 'dosen.nidn = eminar_ta.penguji2_id');
+        // $this->db->join('dosen', 'dosen.nidn = seminar_ta.penguji2_id');
         $query = $this->db->get();
         return $query;
     }

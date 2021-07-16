@@ -59,8 +59,13 @@
                                     <a href="<?= base_url() ?>jadwal_seminar/detail/<?= $row->id; ?>" class="mr-1">
                                         <button class="btn btn-sm btn-warning"> <i class="fas fa-eye"
                                                 title="Lihat Detail" style="color: white;"></i></button></a>
-                                    <?php if($row->kehadiran == 1) :?>
-                                    <a href="<?= base_url(); ?>jadwal_seminar/viewTicket/<?= $row->id ?>" class=" mr-1"
+                                    <?php if($row->tanggal < date('Y-m-d')) : ?>
+                                    <a href="#" class="mr-1" title="Lihat Tiket"> <button class="btn btn-sm btn-danger"
+                                            disabled><i class="fas fa-ticket-alt mr-2" style="color: white;"></i>
+                                            Kedaluwarsa
+                                        </button></a>
+                                    <?php elseif($row->kehadiran == 1) :?>
+                                    <a href="<?= base_url(); ?>jadwal_seminar/view_ticket/<?= $row->id ?>" class=" mr-1"
                                         title="Lihat Tiket"> <button class="btn btn-sm btn-primary"><i
                                                 class="fas fa-ticket-alt mr-2" style="color: white;"></i>Lihat
                                             Tiket</button></a>

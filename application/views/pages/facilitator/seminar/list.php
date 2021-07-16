@@ -58,7 +58,7 @@
                                     <a href="<?= base_url(); ?>facilitator/detail_seminar/<?= $row->id; ?>"
                                         title="Edit">
                                         <button class="btn btn-sm btn-warning"><i
-                                                class="fas fa-eye "></i>Detail</button></a>
+                                                class="fas fa-eye mr-2"></i>Detail</button></a>
                                 </td>
                             </tr>
                             <?php 

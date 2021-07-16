@@ -53,7 +53,7 @@ class Jadwal_Seminar extends CI_Controller {
     public function detail($id_peserta) {
         $data['title'] = 'Student - Detail Seminar Peserta';
         $data['user'] = $this->user_model->checkUser($this->session->userdata('email'));
-        $data['seminar_with_pembimbing'] = $this->peserta_model->getDetailSeminarPeserta($id_peserta);
+        $data['seminar_with_pembimbing'] = $this->peserta_model->getDetailSeminarPeserta($id_peserta, $data['user']['nim']);
         $data['seminar_with_penguji1'] = $this->peserta_model->getDetailSeminarPeserta2($id_peserta);
         $data['seminar_with_penguji2'] = $this->peserta_model->getDetailSeminarPeserta3($id_peserta);
         $data['seminar_with_kategori'] = $this->peserta_model->getDetailSeminarPeserta4($id_peserta);
@@ -66,7 +66,7 @@ class Jadwal_Seminar extends CI_Controller {
         $this->load->view('components/footer');
     }
 
-    public function viewTicket($id_peserta) {
+    public function view_ticket($id_peserta) {
         $data['title'] = 'Student - Detail Seminar Peserta';
         $data['user'] = $this->user_model->checkUser($this->session->userdata('email'));
         $data['seminar'] = $this->peserta_model->getDetailSeminarPeserta($id_peserta);

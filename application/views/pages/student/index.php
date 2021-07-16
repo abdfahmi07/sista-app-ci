@@ -15,7 +15,7 @@
        </div>
 
        <h2 class="col-md seminar-schedule mb-3">
-           Jadwal Seminar Hari Ini
+           Jadwal Seminar
        </h2>
        <div class="row mb-3">
            <?php foreach($seminar->result() as $card) : ?>

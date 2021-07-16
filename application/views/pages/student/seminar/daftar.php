@@ -36,13 +36,13 @@
                         <div class="form-group">
                             <label for="nim">NIM</label>
                             <input type="text" class="form-control" id="nim" placeholder="Masukan NIM" name="nim"
-                                required>
+                                value="<?= $user['nim'] ?>" readonly>
                             <?= form_error('nim', '<small class="text-danger">' , '</small>') ?>
                         </div>
                         <div class="form-group">
                             <label for="name">Nama</label>
                             <input type="text" class="form-control" id="name" placeholder="Masukan Nama" name="name"
-                                required>
+                                value="<?= $user['name'] ?>" readonly>
                             <?= form_error('name', '<small class="text-danger">' , '</small>') ?>
                         </div>
                         <div class="form-group">

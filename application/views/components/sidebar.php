@@ -94,7 +94,7 @@
                     <span>Data Mahasiswa</span>
                 </a>
             </li>
-            <?php if($title == 'Data Penilaian' || $title == 'Detail Penilaian') : ?>
+            <?php if($title == 'Data Penilaian' || $title == 'Detail Penilaian' || $title == 'Tambah Data Penilaian') : ?>
             <li class="nav-item active">
                 <?php else : ?>
             <li class="nav-item">

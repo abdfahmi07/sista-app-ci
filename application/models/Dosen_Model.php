@@ -23,6 +23,7 @@ class Dosen_Model extends CI_Model {
     }
     
     public function getAll() {
+        $this->db->order_by('nama', 'ASC');
         $dosen = $this->db->get($this->table);
         return $dosen;
     }

@@ -23,7 +23,7 @@
                         <div class="form-group">
                             <label for="name">Nama Dosen</label>
                             <input type="text" class="form-control" id="name" name="name"
-                                value="<?= set_value('name') ?>" placeholder="Masukan nama dosen">
+                                value="<?= set_value('name') ?>" placeholder="Masukan Nama Dosen">
                             <?= form_error('name', '<small class="text-danger">' , '</small>') ?>
                         </div>
 
