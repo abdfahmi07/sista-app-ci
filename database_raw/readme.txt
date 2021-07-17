@@ -1,0 +1,1 @@
+Silahkan impor database nya di file db_sista.sql pada folder database_raw

@@ -55,7 +55,7 @@
                             <?= form_error('nilai', '<small class="text-danger">' , '</small>') ?>
                         </div>
                         <div class="form-footer ">
-                            <button type="submit" class="btn btn-primary mt-3">Tambahkan</button>
+                            <button type="submit" class="btn btn-primary mt-3">Update Data</button>
                         </div>
                     </form>
                 </div>
